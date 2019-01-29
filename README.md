@@ -1,8 +1,12 @@
-# vue-neditor-wrap
+# vue-neditor-wrap 数据绑定失败修复版本
+
+> A editor component development based on vue-neditor-wrap [@caiya](https://github.com/caiya/vue-neditor-wrap))
+
+> 主要修复 部分时候绑定数据失败的情况  主要原因是在 loadscript 回调变成两次 _initEditor   value  值丢失 所以在 _beforeInitEditor 把 readyValue 统一初始化 传到  _initEditor 进行数据绑定
 
 ## Installation
 ```bash
-$ npm i vue-neditor-wrap
+$ git cone https://github.com/lyw90/vue-neditor-wrap
 ```
 
 ## Quick Start
@@ -46,12 +50,6 @@ $ npm i vue-neditor-wrap
         }
     }
     ```
-    > 至此你已经可以在页面中看到一个初始化之后的`NEditor`了，并且它已经成功和数据绑定了！
-
-    ![](https://raw.githubusercontent.com/caiya/imgs/master/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20181124115713.png)
-
-    ![](https://raw.githubusercontent.com/caiya/imgs/master/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20181124114504.png)
-
 ## License
 
 [MIT](http://opensource.org/licenses/MIT)

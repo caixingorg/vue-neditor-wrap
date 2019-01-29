@@ -1,7 +1,7 @@
 {
   "name": "vue-neditor-wrap",
-  "version": "1.0.4",
-  "description": "Vue + NEditor + v-model双向绑定",
+  "version": "1.0.5",
+  "description": "Vue + NEditor + v-model双向绑定 修复刷新 有时候有时候无法 绑定的情况",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/caiya/vue-neditor-wrap.git"
+    "url": "git+https://github.com/lyw90/vue-neditor-wrap.git"
   },
   "keywords": [
     "ueditor",
@@ -21,12 +21,12 @@
     "富文本编辑器",
     "百度编辑器"
   ],
-  "author": "晁州",
+  "author": "lyw90",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/caiya/vue-neditor-wrap/issues"
+    "url": "https://github.com/lyw90/vue-neditor-wrap/issues"
   },
-  "homepage": "https://github.com/caiya/vue-neditor-wrap#readme",
+  "homepage": "https://github.com/lyw90/vue-neditor-wrap#readme",
   "devDependencies": {
     "babel-eslint": "^8.2.1",
     "eslint": "^4.15.0",

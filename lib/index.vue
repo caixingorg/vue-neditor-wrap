@@ -94,20 +94,20 @@ export default {
     },
     // 实例化编辑器之前-JS依赖检测
     _beforeInitEditor(value) {
+      this.readyValue = value;
       // 准确判断ueditor.config.js和ueditor.all.js是否均已加载 仅加载完ueditor.config.js时UE对象和UEDITOR_CONFIG对象也存在,仅加载完ueditor.all.js时UEDITOR_CONFIG对象也存在,但为空对象
       !!window.UE &&
       !!window.UEDITOR_CONFIG &&
       Object.keys(window.UEDITOR_CONFIG).length !== 0 &&
       !!window.UE.getEditor
-        ? this._initEditor(value)
-        : this._loadScripts().then(() => this._initEditor(value));
+        ? this._initEditor(this.readyValue)
+        : this._loadScripts().then(() => this._initEditor(this.readyValue));
     },
     // 实例化编辑器
     _initEditor(value) {
       this.$nextTick(() => {
         this.init();
         this.editor = window.UE.getEditor(this.id, this.mixedConfig);
-        this.readyValue = value;
         this.editor.addListener("ready", () => {
           this.isReady = true;
           this.$emit("ready", this.editor);
