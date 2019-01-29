@@ -1,7 +1,7 @@
 {
   "name": "vue-neditor-wrap",
   "version": "1.0.5",
-  "description": "Vue + NEditor + v-model双向绑定 修复刷新 有时候有时候无法 绑定的情况",
+  "description": "Vue + NEditor + v-model双向绑定 修复刷新 有时候无法绑定的情况",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
